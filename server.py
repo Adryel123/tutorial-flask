@@ -11,7 +11,7 @@ def get_form():
 @app.route('/trata-dados', methods=['POST'])
 def validate_form():
     dados = request.form
-    texto = f"seu nome é {dados.get('name')}, seu endereço é {dados.get('address')} e você tem {dados.get('age')} anos :)"
+    texto = f"Seu nome é {dados.get('name')}, seu endereço é {dados.get('address')} e você tem {dados.get('age')} anos :)"
     return texto
 
 
